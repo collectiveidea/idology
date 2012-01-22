@@ -4,10 +4,7 @@ require 'logger'
 require 'happymapper'
 require 'httparty'
 
-if HTTParty::VERSION != '0.5.2'
-  warn "warning: IDology depends on version 0.5.2 of HTTParty, not #{HTTParty::VERSION}."
-end
-
+require File.dirname(__FILE__) + "/core_ext"
 require File.dirname(__FILE__) + "/boolean"
 require File.dirname(__FILE__) + "/iq_challenge_result"
 require File.dirname(__FILE__) + "/iq_error"

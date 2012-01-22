@@ -3,6 +3,7 @@ require 'net/https'
 require 'logger'
 require 'happymapper'
 require 'httparty'
+require 'active_support/core_ext/object/blank'
 
 if HTTParty::VERSION != '0.5.2'
   warn "warning: IDology depends on version 0.5.2 of HTTParty, not #{HTTParty::VERSION}."
